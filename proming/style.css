@@ -1,0 +1,3712 @@
+body {
+    font-family: 'Lora', serif;
+    font-weight: 400;
+}
+
+.page {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-wrap {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.space-beetwen {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.space-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.body {
+    background-image: url('img/Rectangle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.cardBody {
+    background: #25282F;
+}
+
+.body-about {
+    background: #25282F;
+}
+
+.body-form {
+    background: #25282F;
+}
+
+
+
+.active_page {
+    font-size: 18px;
+    line-height: 21px;
+    border-bottom: 4px solid #055987 !important;
+}
+
+
+
+.logo {
+    margin-left: 25px;
+    margin-top: 1%;
+}
+
+.nav-info {
+    /* г. Адыгейск, ул. Чуяко 30/1 литер А info@prom-ing.com */
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FF6801;
+    margin-right: 5%;
+}
+
+.nav-info:hover {
+    text-decoration: none;
+    color: #FF6801;
+}
+
+.nav-info::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #FF6801;
+    width: 240px;
+    margin-top: -13px;
+}
+
+.nav-site {
+    /* г. Адыгейск, ул. Чуяко 30/1 литер А info@prom-ing.com */
+    font-family: Lora;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+}
+
+.nav-site:hover {
+    text-decoration: none;
+    color: #FF6801;
+}
+
+.nav-site:hover:after {
+    border-bottom: 1px solid #FF6801;
+}
+
+.nav-site::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #ffffff;
+    width: 130px;
+    margin-top: -13px;
+}
+
+
+.nav-wrp {
+    display: flex;
+}
+
+.nav-left {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 5%;
+}
+
+.nav-right {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 1.5%;
+    margin-left: auto;
+}
+
+.phoneButton {
+    display: none;
+}
+
+.nav-number-left {
+    /* 8 (800) 250-45-43 */
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-right: 2%;
+}
+
+/* .nav-number-left::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-image: url(img/inst.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -2px;
+    left: -75px;
+} */
+
+.nav-number-left:hover {
+    text-decoration: none;
+    color: #FF6801;
+    transition-duration: .9s;
+}
+
+
+.nav-number-right {
+    /* 8 (800) 250-45-43 */
+    font-family: Oswald, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    margin-right: 2%;
+}
+
+.nav-number-right:hover {
+    text-decoration: none;
+    color: #FF6801;
+    transition-duration: .9s;
+}
+
+
+.nav-svg {
+    margin-right: 10px;
+    margin-top: -1.5%;
+    stroke: #ffffff;
+}
+
+.nav-button {
+    /* Получить консультацию */
+    display: block;
+    width: 217px;
+    height: 40px;
+    background: #FF6801;
+    border-radius: 3px;
+    border-color: #FF6801;
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    margin-top: -15px;
+    margin-right: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.nav-button__href {
+    color: #FFFFFF;
+    display: block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+
+}
+
+.nav-button__href:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background: #FF8C3E;
+    border-color: #ff8c3e;
+    transition-duration: 0.9s;
+    box-shadow: 0 14px 8px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.nav-button:active,
+.nav-button:focus {
+    outline: none;
+}
+
+.instHref {
+    display: block;
+    margin-top: -15px;
+    margin-right: 10px;
+}
+
+.instImg {
+    display: block;
+    width: 25px;
+}
+
+.index-main {
+    justify-content: space-between;
+}
+
+.index-aside {
+    min-width: 231px;
+    min-height: 300px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.index-list {
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 38px;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.index-style-link {
+    color: #ffffff;
+}
+
+.index-style-link:hover {
+    /* color: #ff6801; */
+    color: #ffffff;
+    text-decoration: none;
+    transition-duration: .4s;
+}
+
+/* .index-style-1:active,
+.index-style-2:active,
+.index-style-3:active,
+.index-style-4:active,
+.index-style-5:active,
+.index-style-6:active {
+    width: 225px;
+    height: 40px;
+    background: #006095;
+    padding-left: 30px;
+    transition: background 0.1s ease, padding 0.1s linear;
+} */
+
+.index-style-1:hover,
+.index-style-2:hover,
+.index-style-3:hover,
+.index-style-4:hover,
+.index-style-5:hover,
+.index-style-6:hover {
+    /* width: 225px; */
+    height: 40px;
+    background: #006095;
+    padding-left: 30px;
+    padding-right: 20px;
+    transition: background 0.4s ease, padding 0.4s linear;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+.index-style-link:active {
+    color: #ffffff;
+    /* width: 225px;
+    height: 40px;
+    background: #006095;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 40px;
+    transition: background 0.1s ease, padding 0.1s linear; */
+}
+
+.index-content {
+    min-width: 51%;
+    margin-top: 50px;
+    margin-left: 91px;
+    position: relative;
+}
+
+.index-title {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 54px;
+    color: #FFFFFF;
+    width: 80%;
+}
+
+.index-txt {
+    /* Разработка, проектирование и изготовление полного комплекса оборудования и автоматизации для оснащения пищевых производств. */
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 22px;
+    color: #FFFFFF;
+    max-width: 398px;
+    margin-top: 20px;
+}
+
+
+.index-button {
+    /* Продукция */
+    display: block;
+    width: 202px;
+    height: 49px;
+    background: #FF6801;
+    border-color: #FF6801;
+    border-radius: 3px;
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    position: relative;
+    margin-top: 53px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.index-button:hover {
+    background: #FF8C3E;
+    border-color: #ff8c3e;
+    transition-duration: 0.9s;
+    box-shadow: 0 14px 8px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.index-button:active,
+.index-button:focus {
+    outline: none;
+}
+
+.index-button-txt {
+    padding-left: 25px;
+}
+
+.index-button-txt::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(img/menu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    left: 27px;
+}
+
+.index-img {
+    width: 484px;
+    margin-left: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 150px;
+}
+
+.index-img-render {
+    display: block;
+    opacity: 0;
+}
+
+.index-img-rectangle {
+    display: block;
+    position: absolute;
+    bottom: 72px;
+    z-index: -1;
+    max-width: 484px;
+}
+
+.carousel {
+    width: 750px;
+    height: 500px;
+    position: absolute !important;
+    right: 0;
+    top: 210px;
+}
+
+.owl-carousel {
+    margin: auto;
+}
+
+.carousel-item1,
+.carousel-item2,
+.carousel-item3,
+.carousel-item4,
+.carousel-item5,
+.carousel-item6,
+.carousel-item7,
+.carousel-item8 {
+    /* background-image: url('img/render_3-2.png'); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 499px;
+    width: 245px;
+    margin: auto;
+}
+
+
+
+
+.footer {
+    margin-top: auto;
+}
+
+.footer-list {
+    /* Главная */
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.footer-list a {
+    display: inline-block;
+    border-bottom: 4px solid #ffffff;
+    width: 117px;
+    padding-bottom: 8px;
+}
+
+.footer-list a:hover {
+    border-bottom-color: #055987;
+    transition-duration: .2s;
+}
+
+.footer-nav {
+    /* min-width: 680px; */
+    width: 980px;
+    min-height: 60px;
+    margin-right: 150px;
+    padding-bottom: 30px;
+}
+
+.footer-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerListForm {
+    margin: auto;
+}
+
+/* .footer-style::after {
+    content: '';
+    display: block;
+    border-bottom: 4px solid #ffffff;
+    width: 117px;
+    padding-top: 5px;
+} */
+
+.footer-style-link {
+    color: #ffffff;
+}
+
+.footer-style-link:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-style-1 :hover,
+.footer-style-2 :hover,
+.footer-style-3 :hover,
+.footer-style-4 :hover,
+.footer-style-5 :hover {
+    font-size: 18px;
+    line-height: 21px;
+    transition-duration: 1s;
+}
+
+
+.footer-style:hover {
+    border-bottom-color: #055987;
+    transition-duration: 1s;
+}
+
+.footer-arrow-right {
+    display: block;
+    position: relative;
+    min-height: 25px;
+    position: relative;
+}
+
+/* .footer-arrow:hover:after {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-image: url(img/circle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -3px;
+    right: 33px;
+} */
+
+/* .footer-arrow-right::after {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-image: url(img/circle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -3px;
+    left: 52px;
+}
+
+.footer-arrow-right:hover::after {
+    transform: scale(1.3);
+    transition-duration: .6s;
+} */
+
+.footer-arrow-left {
+    display: block;
+    min-height: 25px;
+    position: relative;
+}
+
+.circleLeft {
+    width: 33px;
+    position: absolute;
+    left: -8px;
+    top: -2.5px;
+}
+
+.circleLeft:hover {
+    transform: scale(1.25);
+    transition-duration: .6s;
+}
+
+.footer-arrow-left:hover .circleLeft {
+    transform: scale(1.25);
+    transition-duration: .6s;
+}
+
+
+/* .footer-arrow-left::after {
+    content: '';
+    display: block;
+    width: 33px;
+    height: 33px;
+    background-image: url(img/circle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -3px;
+    left: -8px;
+}
+
+.footer-arrow-left:hover:after {
+    transform: scale(1.3);
+    transition-duration: .6s;
+} */
+
+.circleRight {
+    width: 33px;
+    position: absolute;
+    right: -10px;
+    top: -2.5px;
+}
+
+.circleRight:hover {
+    transform: scale(1.25);
+    transition-duration: .6s;
+}
+
+.footer-arrow-right:hover .circleRight {
+    transform: scale(1.25);
+    transition-duration: .6s;
+}
+
+.modal-lg {
+    max-width: 60% !important;
+}
+
+.modal-user {
+    max-width: 50% !important;
+}
+
+.modal-product {
+    max-width: 85% !important;
+}
+
+.modal {
+    /* margin-top: calc(50% - 650px); */
+    margin-top: 10%;
+}
+
+.modal-length {
+    margin-top: 1%;
+}
+
+.modal-content {
+    margin: auto;
+}
+
+.modal-body {
+    position: relative;
+    background: #25282F;
+    /* box-shadow: inset 2px 2px 5px rgba(128, 128, 128, 0.4), 1px 1px 5px rgba(0, 0, 0, 1); */
+}
+
+.close-button {
+    position: absolute;
+    top: -40px;
+    right: -10px;
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    border-radius: 50%;
+}
+
+.close-button:before,
+.close-button:after {
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 16px;
+    width: 26px;
+    height: 2px;
+    background: #ffffff;
+    color: #ffffff;
+}
+
+.close-button:before {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.close-button:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.index-modal-title {
+    /* Проектирование */
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin-left: 22px;
+    text-align: center;
+}
+
+.index-modal-txt {
+    /* Компания ПромИнжиниринг оказывает полный спектр услуг по оснащению Вашего производства необходимым оборудованием. Один из важнейших этапов работы - проектирование. Наш конструкторский отдел использует в работе новейшее ПО для автоматизированного проектирования, позволяющее создать полную 3D-модель оборудования. Такой подход позволяет предусмотреть все нюансы работы, размещения и транспортировки создаваемого оборудования. */
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: justify;
+    color: #FFFFFF;
+    max-width: 838px;
+    margin-left: 22px;
+    margin-top: 24px;
+    text-align: justify;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.index-modal-img-wrp {
+    width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 9px;
+}
+
+.index-modal-img {
+    display: block;
+    width: 29%;
+}
+
+.index-modal-logo {
+    display: block;
+    width: 50%;
+    margin-top: 70px;
+    padding-bottom: 55px;
+}
+
+.modal-wrp {
+    display: flex;
+}
+
+.modal-asd {
+    width: 30%;
+    margin-right: auto;
+    background: #ffffff;
+    /* background: #055987; */
+    padding-bottom: 25px;
+    padding-left: 32px;
+}
+
+.modal-asd:hover {
+    background: #055987;
+    transition-duration: 0, 4s;
+}
+
+.modal-cnt {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-title-mini {
+    /* Производство пива и кваса */
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.modal-title-micro {
+    /* Варочный порядок (комплекс) */
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 15px;
+    color: #FFFFFF;
+}
+
+.modal-title-mini {
+    /* Производство пива и кваса */
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 27px;
+    color: #000000;
+    max-width: 313px;
+    margin-top: 37px;
+}
+
+.modal-title-micro {
+    /* Варочный порядок (комплекс) */
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    width: 233px;
+    margin-top: 28px;
+    /* margin-left: 32px; */
+}
+
+.modal-list li {
+    /* - Заторный аппарат */
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    /* color: rgba(255, 255, 255, 0.7); */
+    color: #000000;
+    /* margin-left: 32px; */
+}
+
+.modal-list li:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.modal-list li:first-child {
+    margin-top: 17px;
+}
+
+.modal-list li a {
+    color: #000000;
+}
+
+.modal-list li a:hover {
+    color: #FF6801;
+    text-decoration: none;
+}
+
+.cnt-list li a {
+    color: #000000;
+}
+
+.cnt-list li a:hover {
+    color: #FF6801;
+    text-decoration: none;
+}
+
+/* .modal-cnt:hover {
+    background: #055987;
+} */
+
+.modal-cnt-card1:hover,
+.modal-cnt-card2:hover,
+.modal-cnt-card3:hover {
+    background: #055987;
+}
+
+
+
+.modal-cnt-card1 {
+    width: 33.34%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.modal-cnt-title {
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 27px;
+    color: #000000;
+    padding-top: 37px;
+}
+
+.cnt-title-mini {
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    margin-top: 25px;
+}
+
+.cnt-list li {
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: 8px;
+}
+
+.modal-cnt-card2 {
+    width: 33.34%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cnt-list-second {
+    margin-top: 30px;
+}
+
+.modal-cnt-card3 {
+    width: 33.34%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cnt-list-third {
+    margin-top: 30px;
+}
+
+/* Вторая страница - "О компании" */
+
+
+.about-content-wrp {
+    max-width: 1000px;
+    padding-left: 15px;
+    /* margin-left: 220px; */
+    margin: auto;
+    margin-top: 100px;
+}
+
+.about-content-wrp h2 {
+    /* О компании */
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.about-content-wrp p {
+    /* Компания ООО «ПромИнжиниринг» основана в 2019г, когда встретились и объединились две команды профессионалов, работающих на совершенно разных рынках. До этой встречи одна команда имела за своими плечами многолетний опыт работы в металлообработке и строительстве пивоваренных заводов и оборудования для молочной промышленности. Вторая команда (Адыгейский пивобезалкогольный завод «АСБИР»), имея профильное образование по классу Пивоварение, профессионально занималась производством любимого многими пенного хмельного напитка. Встреча этих двух команд позволила создать уникальный проект по разработке и производству оборудования для минипивоварен и пивоваренных заводов. */
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: justify;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    margin-top: 25px;
+}
+
+.about-cards {
+    background: #006095;
+    border-radius: 3px;
+    max-width: 240px;
+    height: 88px;
+}
+
+.about-cards p {
+    /* Высокая энергоэффективность оборудования */
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: start;
+    padding-left: 25px;
+    padding-top: calc(25% - 55px);
+}
+
+.about-cards-first {
+    background: #25282F;
+}
+
+.about-cards-long {
+    width: 1000px;
+}
+
+.about-cards:not(:first-child) {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.about-cards-wrapper {
+    width: 1448px;
+    display: grid;
+    grid-gap: 8px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 75px;
+    margin-bottom: 50px;
+}
+
+
+.about-content-card {
+    margin-bottom: 150px;
+}
+
+.about-cards-long {
+    padding-right: 480px;
+}
+
+/* Третья страница "Продукция" */
+
+.product_classes {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 28px;
+    align-items: end;
+    margin-top: 105px;
+}
+
+
+.product_classes div h2 {
+    /* Продукция */
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.product_classes div p {
+    /* Производство пива и кваса */
+    font-family: Lora;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    border-bottom: 1px dashed #FFFFFF;
+    padding-bottom: 2px;
+}
+
+.product_classes div p:hover {
+    color: #FF6801;
+    transition-duration: 0.6s;
+}
+
+.product_classes div a {
+    text-decoration: none;
+}
+
+.product_items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 28px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 55px;
+    margin-bottom: 50px;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+
+.product_items>div>img {
+    display: block;
+    max-width: 185px;
+    align-content: end;
+}
+
+.product_item1 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ckt4-1.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item2 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ckt4-2.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item3 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ft2_1.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item4 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ft2_2.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    position: relative;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item5 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ft05_1.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item6 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ft05_2.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item7 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/КЕГ-1.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item8 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/КЕГ-2.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item9 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/МCIP-1.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item10 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/МCIP-2.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item11 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/CIP4-1.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item12 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/CIP4-2.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item13 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/CIP4-3.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item14 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/АЕМВ10-1.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item15 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/АЕМВ10-2.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item16 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/АЕМВ10-3.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item17 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ВА4-1.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item18 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ВА4-2.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item19 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ВА4-3.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item20 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ЕВБ4.5-1.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item21 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ЕВБ4.5-2.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item22 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ЕВБ4.5-3.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item23 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ЕМР3.5-1.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item24 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ЕМР3.5-2.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+.product_item25 {
+    max-width: 200px;
+    min-height: 260px;
+    background: url(img/cardsImg/ЕМР3.5-3.png) no-repeat center center;
+    background-size: contain;
+    margin-top: auto;
+    /* cursor: url(img/Ellipse.png), auto; */
+}
+
+
+.ellipse {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+.productsWrp {
+    width: 80%;
+    background: #ffffff !important;
+    border: 1px solid #25282F;
+    /* border-bottom: 4px solid #25282F; */
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+.product-modal-wrp {
+    margin-top: 60px;
+}
+
+.product-modal-title {
+    /* Водогрейный аппарат */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 35px;
+    color: #000000 !important;
+    margin-bottom: 30px;
+}
+
+.product-modal-span {
+    display: block;
+    margin-top: 20px;
+}
+
+.product-modal-text {
+    /* Водогрейный аппарат представляет собой цилиндрическую емкость с рубашкой нагрева и термоизоляцией, предназначенную для нагрева воды для технологических нужд. Емкость выполняется в вертикальном исполнении. Оснащается люком, моющим оборудованием, запорно-соединительной арматурой. По желанию может комплектоваться средствами автоматизации - контроль и поддержание температуры, - автоматическое открытие\закрытие клапанов, - контроль состояния крышки люка (открыт\закрыт) */
+    font-family: Lora;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 34px;
+    color: #000000;
+    width: 618px;
+}
+
+/* 
+.productModalImgWrp {
+    margin-top: 60px;
+} */
+
+.productModalImg {
+    display: block;
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 200px !important;
+}
+
+.cipImg {
+    width: 250px !important;
+    margin-top: 150px !important;
+}
+
+.imgCap {
+    margin-top: 220px;
+    width: 320px !important;
+}
+
+.modal-btn-wrp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 380px;
+    margin-top: 54px;
+    margin-bottom: 40px;
+}
+
+.socWrapper {
+    display: flex;
+}
+
+.socWrp {
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+.modal-btn-cost {
+    background: #006095;
+    border-radius: 8px;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFFFFF;
+    width: 183px;
+    height: 40px;
+    margin-right: -60px;
+}
+
+
+.modal-btn-cost,
+.modal-btn-cost:active,
+.modal-btn-cost:focus {
+    outline: none;
+}
+
+.modal-btn-send {
+    width: 183px;
+    height: 40px;
+    border: 1px solid #006095;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #006095;
+}
+
+.modal-btn-send,
+.modal-btn-send:active,
+.modal-btn-send:focus {
+    outline: none;
+}
+
+.btnSend {
+    color: #006095;
+    display: block;
+
+}
+
+.btnSend:hover {
+    text-decoration: none;
+    color: #006095;
+}
+
+.btnCost {
+    color: #ffffff;
+    display: block;
+}
+
+.btnCost:hover {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.slider-2 {
+    position: absolute !important;
+    left: 120px !important;
+    top: 30px !important;
+    max-width: 400px;
+
+}
+
+
+
+.slider-3 {
+    position: absolute !important;
+    left: 120px !important;
+    top: 30px !important;
+    max-width: 400px;
+}
+
+.carouselArrLeft {
+    width: 15px;
+    /* opacity: 0.4; */
+    border-color: transparent !important;
+    position: absolute;
+    top: 45%;
+    left: 15px;
+}
+
+.carouselArrRight {
+    width: 15px;
+    /* transform: scaleX(-1); */
+    /* opacity: 0.4; */
+    position: absolute;
+    top: 45%;
+    right: 15px;
+}
+
+/* .carousel-products-second {
+    position: absolute !important;
+    left: 50px !important;
+    top: 10px !important;
+    max-width: 350px;
+} */
+
+.cardHigh {
+    padding-bottom: 150px;
+}
+
+
+/* Четвертая страница "Автоматизация" */
+
+.automation-grid-wrp {
+    margin-top: 130px;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.automation-title {
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.automation-content-wrp {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 25px;
+}
+
+.automation-item1 p {
+    max-width: 353px;
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 29px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.automation-item2 p {
+    /* - Автоматика варочных порядков (в том числе модернизация имеющегося оборудования) - Автоматика линий охлаждения - Автоматика отдельных аппаратов варочного порядка - Автоматика емкостей с перемешивающими устройствами - Автоматика процессов нагрева и охлаждения */
+    max-width: 387px;
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.automation-item3 p {
+    /* Производство шкафов управления по техническому заданию: - ШУ - шкаф управления - ЩСН - щит собственных нужд - ЩО - щит освещения - ВРУ - вводно-распределительное устройство - АВР - автоматический ввод резерва */
+    max-width: 382px;
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.automation-img-wrp {
+    max-width: 686px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    position: absolute;
+    top: 305px;
+    right: 50px;
+}
+
+.automation-img2,
+.automation-img3 {
+    padding-left: 20px;
+}
+
+/* Шестая страница Контакты */
+
+.contacts-wrp {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 800px));
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 150px;
+}
+
+.contacts {
+    margin-left: 350px;
+}
+
+
+
+.contacts-title {
+    /* Контакты */
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.contacts-list {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    max-width: 306px;
+    position: relative;
+}
+
+
+
+.contacts-list-style {
+    padding-bottom: 28px;
+    padding-left: 30px;
+}
+
+.contacts-list-style1::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(img/Vector.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 5px;
+    left: 0;
+}
+
+.contacts-list-style2::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(img/Vector1.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 128px;
+    left: 0;
+}
+
+.contacts-list-style3::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(img/Vector2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 215px;
+    left: 0;
+}
+
+.contacts-list-style4::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(img/Vector3.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 335px;
+    left: 0;
+}
+
+.contacts-list-style span {
+    font-family: Oswald, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
+/* .map {
+    max-width: 789px;
+} */
+
+/* Карточки товаров */
+
+.cardHeader {
+    background: #25282F;
+    /* box-shadow: 0 8px 8px rgba(0, 0, 0, 0.20), 0 8px 8px rgba(0, 0, 0, 0.22); */
+    padding-bottom: 10px;
+}
+
+.cardsWrp {
+    font-family: Lora, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    border: 3px solid #25282F;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    grid-template-rows: repeat(2, minmax(60px, auto));
+    grid-template-areas: "namePhoto category description"
+        "namePhoto__content category__content description__content";
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.20), 0 8px 8px rgba(0, 0, 0, 0.22);
+}
+
+.cardsWrp:nth-child(n+2) {
+    margin-top: 40px;
+}
+
+.cardsWrp:first-child {
+    margin-top: 50px;
+}
+
+.cardsWrp:last-child {
+    margin-bottom: 50px;
+}
+
+.namePhoto {
+    grid-area: namePhoto;
+    text-align: center;
+    border: 1px solid #25282F;
+    box-sizing: border-box;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.category {
+    grid-area: category;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #25282F;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+.description {
+    grid-area: description;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #25282F;
+    box-sizing: border-box;
+    font-weight: 700;
+}
+
+.namePhoto__content {
+    grid-area: namePhoto__content;
+    border: 1px solid #25282F;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+
+.category__content {
+    grid-area: category__content;
+    border: 1px solid #25282F;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+
+.description__content {
+    grid-area: description__content;
+    border: 1px solid #25282F;
+    box-sizing: border-box;
+    padding-left: 5px;
+}
+
+.carousel-card {
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+/* Форма заявки */
+
+.formWrapper {
+    width: 688px;
+    min-height: 1016px;
+    margin: auto;
+    border: 3px solid #25282F;
+    background: #ffffff;
+    position: relative;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-top: 27px;
+    border-radius: 8px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.20), 0 8px 8px rgba(0, 0, 0, 0.22);
+    margin-top: 70px;
+    margin-bottom: 150px;
+}
+
+.formTitle {
+    /* Заявка на расчет стоимости */
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    color: #000000;
+}
+
+.formTxt {
+    /* * - обязательно для заполнения */
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+.formInfoImg_count::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/info.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    left: 70px;
+}
+
+.formInfoImg_volume::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/info.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    left: 90px;
+}
+
+.formInfoImg_pressure::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/info.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    left: 158px;
+}
+
+
+.labelBlock {
+    display: block;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11.5px;
+    line-height: 15px;
+    color: #000;
+}
+
+.labelBlock__invisible {
+    opacity: 0;
+}
+
+.inputTxt {
+    display: block;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    color: rgba(0, 0, 0, 0.5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    width: 220px;
+}
+
+.inputTxt_name {
+    width: 370px;
+}
+
+.inputTxt_phone {
+    width: 170px;
+}
+
+/* .organizationWrp {
+    border: 1px solid #000;
+} */
+
+.labelBlock:first-child {
+    margin-top: 15px;
+}
+
+.labelBlock_type {
+    margin-top: 10px;
+}
+
+/* .nameWrp {
+    border: 1px solid #000;
+} */
+
+.displayFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.countWrp,
+.volumeWrp,
+.pressureWrp {
+    position: relative;
+    width: 181px;
+}
+
+.rangeWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.formProductWrp {
+    width: 100%;
+    margin: auto;
+    margin-top: 45px;
+    position: relative;
+}
+
+.inputTxt_formProduct {
+    width: 100%;
+}
+
+.labelTxt {
+    font-family: Lora;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+}
+
+.formInfoImg_formProduct::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/info.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1px;
+    left: 52px;
+}
+
+.checkboxWrp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.heatExchange,
+.thermalInsulation,
+.placement,
+.material,
+.mixer,
+.automat,
+.equipment,
+.invisibleWrp,
+.measuring {
+    position: relative;
+    width: 33%;
+}
+
+.formInfoImg_heatExchange::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/info.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    right: 42px;
+}
+
+.formInfoImg_thermalInsulation::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/info.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    right: 94px;
+}
+
+.formInfoImg_placement::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/info.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    right: 114px;
+}
+
+.formInfoImg_automat::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/info.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    right: 118px;
+}
+
+.formInfoImg_material::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/info.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    right: 129px;
+}
+
+.formInfoImg_mixer::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/info.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    right: 133px;
+}
+
+.formInfoImg_equipment::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/info.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    right: 102px;
+}
+
+.formInfoImg_measuring::after {
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/info.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 16px;
+    right: 142px;
+}
+
+.formCommentsWrp {
+    margin-bottom: 16px;
+}
+
+.labelBlock_comments {
+    margin-top: 29px;
+    margin-bottom: -15px;
+}
+
+.resize__no {
+    resize: none;
+}
+
+.formButton {
+    display: block;
+    width: 179px;
+    height: 40px;
+    background: #006095;
+    border-radius: 3px;
+    font-family: Lora;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    border-color: transparent;
+    outline: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-bottom: 23px;
+}
+
+.formButton:hover {
+    background: #0B84C7;
+}
+
+
+/* Медиазапросы для адаптива под гаджеты */
+
+@media (max-width: 345.98px) {
+    .nav-number-right {
+        margin-left: 8%;
+        padding-top: 3%;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .logo {
+        margin-top: 2%;
+        margin-left: -5px;
+        width: 100%;
+    }
+
+    .nav-info {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .nav-wrp {
+        flex-wrap: wrap;
+    }
+
+    .nav-left {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .phoneButton {
+        display: block !important;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 32px;
+        height: 32px;
+        background: #FF6801;
+        border-color: transparent;
+        border-radius: 50px;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 23px;
+        color: #FFFFFF;
+        /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); */
+        -webkit-box-shadow: 0px 0px 30px 2px rgba(255, 104, 1, 0.7);
+        -moz-box-shadow: 0px 0px 30px 2px rgba(255, 104, 1, 0.7);
+        box-shadow: 0px 0px 30px 2px rgba(255, 104, 1, 0.7);
+        text-decoration: none;
+    }
+
+    .phoneButton-txt {
+        color: #FFFFFF;
+    }
+
+    .fa-phone {
+        display: block;
+        margin: auto;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .index-content {
+        margin: auto;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .index-title {
+        width: 100%;
+    }
+
+    .index-button {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .index-aside {
+        display: none;
+    }
+
+    .index-img {
+        display: none;
+    }
+
+    .about-content-wrp {
+        margin-left: -15px;
+    }
+
+    .about-cards {
+        background: #006095;
+        border-radius: 3px;
+        max-width: 240px;
+        height: 88px;
+    }
+
+    .about-cards p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: start;
+        padding-left: 10px;
+        padding-top: calc(25% - 55px);
+    }
+
+    .about-cards-none {
+        display: none;
+    }
+
+    .about-cards-wrapper {
+        width: 100%;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .about-cards-long {
+        padding-right: 0;
+    }
+
+
+    .product_classes {
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 28px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+
+    .product_items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+
+    .automation-grid-wrp {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+        padding-bottom: 600px;
+    }
+
+    .automation-img-wrp {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 900px;
+        left: 10px;
+        margin-right: auto;
+        margin-left: -15px;
+
+    }
+
+
+    .automation-img {
+        margin-top: 20px;
+    }
+
+
+    .automation-img2,
+    .automation-img3 {
+        margin-left: -20px;
+
+    }
+
+    .contacts-wrp {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 800px));
+        grid-auto-rows: minmax(100px, auto);
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    .contacts {
+        margin-left: 0;
+    }
+
+
+    .footer-nav {
+        width: 100%;
+        margin: auto;
+    }
+
+    .footer-list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .footer-arrow-right,
+    .footer-arrow-left {
+        display: none;
+    }
+
+    .productsWrp {
+        width: 95%;
+    }
+
+
+    .product-modal-title {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .product-modal-wrp {
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+
+    .product-modal-text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 34px;
+        width: 95%;
+        text-align: center;
+    }
+
+    .productModalImg {
+        display: block;
+        margin-top: 40px;
+        margin-left: 100px;
+        width: 200px !important;
+    }
+
+
+    .modal-btn-wrp {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 380px;
+    }
+
+    .modal-btn-cost {
+        font-size: 14px;
+        line-height: 18px;
+        width: 183px;
+        height: 40px;
+    }
+
+    .modal-btn-send {
+        width: 183px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+}
+
+@media (min-width: 575.99px) and (max-width: 767.98px) {
+
+    .logo {
+        margin-top: 2%;
+        margin-left: -5px;
+        width: 100%;
+    }
+
+    .nav-info {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .nav-wrp {
+        flex-wrap: wrap;
+    }
+
+    .nav-left {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .phoneButton {
+        display: block !important;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 32px;
+        height: 32px;
+        background: #FF6801;
+        border-color: transparent;
+        border-radius: 50px;
+        font-family: Lora;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 23px;
+        color: #FFFFFF;
+        /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); */
+        -webkit-box-shadow: 0px 0px 30px 2px rgba(255, 104, 1, 0.7);
+        -moz-box-shadow: 0px 0px 30px 2px rgba(255, 104, 1, 0.7);
+        box-shadow: 0px 0px 30px 2px rgba(255, 104, 1, 0.7);
+        text-decoration: none;
+    }
+
+    .phoneButton-txt {
+        color: #FFFFFF;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .index-content {
+        margin: auto;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .index-title {
+        width: 100%;
+    }
+
+    .index-button {
+        display: block;
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    .index-aside {
+        display: none;
+    }
+
+    .index-img {
+        display: none;
+    }
+
+    .about-content-wrp {
+        margin-left: -15px;
+    }
+
+    .about-cards {
+        background: #006095;
+        border-radius: 3px;
+        width: 240px;
+        height: 88px;
+    }
+
+    .about-cards p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: start;
+        padding-left: 10px;
+        padding-top: calc(25% - 55px);
+    }
+
+    .about-cards-none {
+        display: none;
+    }
+
+    .about-cards-wrapper {
+        width: 80%;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .about-cards-long {
+        padding-right: 0;
+    }
+
+
+    .product_classes {
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 28px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+
+    .product_items {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+
+    .automation-grid-wrp {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+        padding-bottom: 600px;
+    }
+
+    .automation-img-wrp {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 900px;
+        left: 10px;
+        margin-right: auto;
+        margin-left: -15px;
+
+    }
+
+
+    .automation-img {
+        margin-top: 20px;
+    }
+
+
+    .automation-img2,
+    .automation-img3 {
+        margin-left: -20px;
+
+    }
+
+    .contacts-wrp {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 800px));
+        grid-auto-rows: minmax(100px, auto);
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    .contacts {
+        margin-left: 0;
+    }
+
+
+    .footer-nav {
+        width: 100%;
+        margin: auto;
+    }
+
+    .footer-list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .footer-arrow-right,
+    .footer-arrow-left {
+        display: none;
+    }
+
+    .productsWrp {
+        width: 95%;
+    }
+
+
+    .product-modal-title {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .product-modal-wrp {
+        margin-left: 20px;
+        margin-top: 60px;
+    }
+
+    .product-modal-text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 34px;
+        width: 95%;
+        text-align: center;
+    }
+
+    .productModalImg {
+        display: block;
+        margin-top: 40px;
+        margin-left: 100px;
+        width: 200px !important;
+    }
+
+
+    .modal-btn-wrp {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 380px;
+    }
+
+    .modal-btn-cost {
+        font-size: 14px;
+        line-height: 18px;
+        width: 183px;
+        height: 40px;
+    }
+
+    .modal-btn-send {
+        width: 183px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .modal-product {
+        max-width: 85% !important;
+    }
+
+    .modal {
+        /* margin-top: calc(50% - 650px); */
+        margin-top: 15%;
+    }
+
+    .modal-length {
+        margin-top: 1%;
+    }
+
+    .modal-content {
+        margin: auto;
+    }
+
+
+
+    .modal-wrp {
+        display: flex;
+    }
+
+    .modal-asd {
+        width: 30%;
+        margin-right: auto;
+        background: #ffffff;
+        /* background: #055987; */
+        padding-bottom: 25px;
+        padding-left: 12px;
+    }
+
+    .modal-asd:hover {
+        background: #055987;
+        transition-duration: 0, 4s;
+    }
+
+    .modal-cnt {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .modal-title-mini {
+        /* Производство пива и кваса */
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 27px;
+        color: #000000;
+        max-width: 213px;
+        margin-top: 37px;
+    }
+
+    .modal-title-micro {
+        /* Варочный порядок (комплекс) */
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 22px;
+        color: #000000;
+        width: 133px;
+        margin-top: 28px;
+        /* margin-left: 32px; */
+    }
+
+    .modal-list li {
+        /* - Заторный аппарат */
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
+        /* color: rgba(255, 255, 255, 0.7); */
+        color: #000000;
+        /* margin-left: 32px; */
+    }
+
+
+    .modal-cnt-title {
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 27px;
+        color: #000000;
+        padding-top: 37px;
+    }
+
+    .cnt-title-mini {
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+        color: #000000;
+        margin-top: 25px;
+    }
+
+    .cnt-list li {
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        color: rgba(0, 0, 0, 0.7);
+        margin-top: 8px;
+    }
+
+}
+
+
+@media (min-width: 767.99px) and (max-width: 991.98px) {
+
+
+    .logo {
+        margin-top: 2%;
+        margin-left: -5px;
+        width: 20%;
+    }
+
+    .logoMobile {
+        width: 180px;
+    }
+
+    .nav-info {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .nav-wrp {
+        flex-wrap: nowrap;
+    }
+
+    .nav-left {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-right {
+        width: 80%;
+        padding-top: 10px;
+    }
+
+
+    .phoneButton {
+        display: none;
+    }
+
+
+    .carousel {
+        display: none;
+    }
+
+    .index-content {
+
+        width: 300px
+    }
+
+    .index-title {}
+
+    .index-button {}
+
+    .index-aside {}
+
+    .index-img {
+        display: none;
+    }
+
+    .about-content-wrp {
+        /* margin-left: 15px; */
+    }
+
+    .about-cards {
+        background: #006095;
+        border-radius: 3px;
+        max-width: 240px;
+        height: 88px;
+    }
+
+    .about-cards p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: start;
+        padding-left: 10px;
+        padding-top: calc(25% - 55px);
+    }
+
+    .about-cards-none {
+        display: none;
+    }
+
+    .about-cards-wrapper {
+        width: 100%;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .about-cards-long {
+        padding-right: 0;
+    }
+
+
+    .product_classes {
+        grid-template-columns: repeat(1, auto);
+        grid-gap: 28px;
+        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+
+    .product_items {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+
+    .automation-grid-wrp {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0px;
+        padding-bottom: 600px;
+    }
+
+    .automation-img-wrp {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 800px;
+        left: 10px;
+        margin-right: auto;
+        margin-left: -15px;
+
+    }
+
+
+    .automation-img {
+        margin-top: 20px;
+    }
+
+
+    .automation-img2,
+    .automation-img3 {
+        margin-left: -20px;
+
+    }
+
+    .contacts-wrp {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 800px));
+        grid-auto-rows: minmax(100px, auto);
+        margin-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    .contacts {
+        margin-left: 0;
+    }
+
+
+    .footer-nav {
+        width: 100%;
+        margin: auto;
+    }
+
+    .footer-list {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+    }
+
+    .footer-arrow-right,
+    .footer-arrow-left {
+        display: none;
+    }
+
+    .productsWrp {
+        width: 95%;
+
+    }
+
+    .imgCap {
+        width: 60% !important;
+        position: absolute !important;
+        margin: auto;
+        top: 40% !important;
+    }
+
+
+
+}
+
+@media (min-width: 991.99px) and (max-width: 1366.98px) {
+    .modal {
+        /* margin-top: calc(50% - 650px); */
+        margin-top: 2%;
+    }
+}
+
+@media (min-width: 1199.98px) and (max-width: 1680px) {
+
+    .about-cards {
+        background: #006095;
+        border-radius: 3px;
+        max-width: 240px;
+        height: 88px;
+    }
+
+    .about-cards p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: start;
+        padding-left: 10px;
+        padding-top: calc(25% - 55px);
+    }
+
+    .about-cards-none {
+        display: none;
+    }
+
+    .about-cards-wrapper {
+        width: 60%;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        margin-left: 250px;
+    }
+
+    .about-cards-long {
+        padding-right: 0;
+    }
+
+    .contacts-wrp {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        margin-top: 150px;
+    }
+
+    .map {
+        max-width: 489px;
+    }
+
+
+    .productsWrp {
+        width: 95%;
+
+    }
+
+    .product-modal-wrp {
+        margin-top: 60px;
+    }
+
+    .product-modal-title {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .product-modal-span {}
+
+    .product-modal-text {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 34px;
+        width: 618px;
+    }
+
+    .productModalImg {
+        display: block;
+        margin-top: 40px;
+        margin-left: 100px;
+        width: 200px !important;
+    }
+
+    .cipImg {
+        width: 250px !important;
+    }
+
+    .imgCap {
+        margin-top: 220px;
+        width: 320px !important;
+    }
+
+    .modal-btn-wrp {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 380px;
+    }
+
+    .modal-btn-cost {
+        font-size: 14px;
+        line-height: 18px;
+        width: 183px;
+        height: 40px;
+    }
+
+    .modal-btn-send {
+        width: 183px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .modal-btn-send,
+    .modal-btn-send:active,
+    .modal-btn-send:focus {
+        outline: none;
+    }
+
+    .btnSend {
+        color: #006095;
+        display: block;
+
+    }
+
+    .btnSend:hover {
+        text-decoration: none;
+        color: #006095;
+    }
+
+
+    .slider-2 {
+        position: absolute !important;
+        left: calc(18% - 200px) !important;
+        top: 30px !important;
+        max-width: 380px;
+    }
+
+    .carouselArrLeft {
+        width: 15px;
+        /* opacity: 0.4; */
+        border-color: transparent !important;
+        position: absolute;
+        top: 45%;
+        left: 15px;
+    }
+
+    .carouselArrRight {
+        width: 15px;
+        /* transform: scaleX(-1); */
+        /* opacity: 0.4; */
+        position: absolute;
+        top: 45%;
+        right: 15px;
+    }
+
+
+    /* .modal-title-micro {
+        width: 90%;
+    }
+
+    .modal-list li {
+        width: 90%;
+    }
+
+    .productModalImg {
+        width: 65%;
+        display: block;
+        margin-top: 40px;
+        margin-left: 60px;
+    }
+
+    .slider-2 {
+        position: absolute !important;
+        left: 10px !important;
+        top: 50px !important;
+        max-width: 350px;
+    }
+
+    .slider-2 {
+        position: absolute !important;
+        left: 10px !important;
+        top: 50px !important;
+        max-width: 350px;
+    } */
+
+    /* .carousel-inner {
+        border: 1px solid #000;
+        width: 100% !important;
+        margin-top: -150px;
+    }
+
+    .carousel-item {
+        border: 1px solid #000;
+        width: 100% !important;
+    } */
+
+}
+
+@media (max-width: 1299.98px) {
+
+    .productsWrp {
+        padding-bottom: 550px;
+    }
+
+    .product-modal-wrp {
+        margin: auto;
+        margin-top: 60px;
+        width: 90%;
+    }
+
+    .slider-1 {
+        width: 280px !important;
+        position: absolute !important;
+        right: 0;
+        top: -30px;
+    }
+
+    .slider-2 {
+        position: absolute !important;
+        left: calc(78% - 200px) !important;
+        top: 50px !important;
+        max-width: 400px;
+    }
+
+    .imgCap {
+        margin-top: 220px;
+        width: 320px !important;
+        position: absolute !important;
+        left: calc(70% - 160px) !important;
+    }
+
+    .modal-product {
+        max-width: 85% !important;
+    }
+
+    .modal {
+        /* margin-top: calc(50% - 650px); */
+        margin-top: 15%;
+    }
+
+    .modal-length {
+        margin-top: 1%;
+    }
+
+    .modal-content {
+        margin: auto;
+    }
+
+
+    .close-button {
+        position: absolute;
+        top: -40px;
+        right: -10px;
+        width: 55px;
+        height: 55px;
+        cursor: pointer;
+        border: 4px solid transparent;
+        border-radius: 50%;
+    }
+
+    .close-button:before,
+    .close-button:after {
+        content: "";
+        position: absolute;
+        top: 21px;
+        left: 16px;
+        width: 26px;
+        height: 2px;
+        background: #ffffff;
+        color: #ffffff;
+    }
+
+
+    .modal-wrp {
+        display: flex;
+    }
+
+    .modal-asd {
+        width: 30%;
+        margin-right: auto;
+        background: #ffffff;
+        /* background: #055987; */
+        padding-bottom: 25px;
+        padding-left: 12px;
+    }
+
+    .modal-asd:hover {
+        background: #055987;
+        transition-duration: 0, 4s;
+    }
+
+    .modal-cnt {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .modal-title-mini {
+        /* Производство пива и кваса */
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: #000000;
+        max-width: 213px;
+        margin-top: 37px;
+    }
+
+    .modal-title-micro {
+        /* Варочный порядок (комплекс) */
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+        width: 133px;
+        margin-top: 28px;
+        /* margin-left: 32px; */
+    }
+
+    .modal-list li {
+        /* - Заторный аппарат */
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        /* color: rgba(255, 255, 255, 0.7); */
+        color: #000000;
+        /* margin-left: 32px; */
+    }
+
+    .modal-list li:not(:last-child) {
+        margin-bottom: 9px;
+    }
+
+    .modal-list li:first-child {
+        margin-top: 17px;
+    }
+
+    .modal-list li a {
+        color: #000000;
+    }
+
+    .modal-list li a:hover {
+        color: #FF6801;
+        text-decoration: none;
+    }
+
+    .cnt-list li a {
+        color: #000000;
+    }
+
+    .cnt-list li a:hover {
+        color: #FF6801;
+        text-decoration: none;
+    }
+
+    /* .modal-cnt:hover {
+        background: #055987;
+    } */
+
+    .modal-cnt-card1:hover,
+    .modal-cnt-card2:hover,
+    .modal-cnt-card3:hover {
+        background: #055987;
+    }
+
+
+    .modal-cnt-card1 {
+        width: 33.34%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .modal-cnt-title {
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: #000000;
+        padding-top: 37px;
+    }
+
+    .cnt-title-mini {
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 26px;
+        color: #000000;
+        margin-top: 25px;
+    }
+
+    .cnt-list li {
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 18px;
+        color: rgba(0, 0, 0, 0.7);
+        margin-top: 8px;
+    }
+
+    .modal-cnt-card2 {
+        width: 33.34%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cnt-list-second {
+        margin-top: 30px;
+    }
+
+    .modal-cnt-card3 {
+        width: 33.34%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .cnt-list-third {
+        margin-top: 30px;
+    }
+
+}
+
+
+@media (min-width: 575.99px) and (max-width: 767.98px) {
+
+    .modal-product {
+        max-width: 85% !important;
+    }
+
+    .modal {
+        /* margin-top: calc(50% - 650px); */
+        margin-top: 15%;
+    }
+
+    .modal-length {
+        margin-top: 1%;
+    }
+
+    .modal-content {
+        margin: auto;
+    }
+
+
+
+    .modal-wrp {
+        display: flex;
+    }
+
+    .modal-asd {
+        width: 30%;
+        margin-right: auto;
+        background: #ffffff;
+        /* background: #055987; */
+        padding-bottom: 25px;
+        padding-left: 12px;
+    }
+
+    .modal-asd:hover {
+        background: #055987;
+        transition-duration: 0, 4s;
+    }
+
+    .modal-cnt {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .modal-title-mini {
+        /* Производство пива и кваса */
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 14px;
+        color: #000000;
+        max-width: 213px;
+        margin-top: 37px;
+    }
+
+    .modal-title-micro {
+        /* Варочный порядок (комплекс) */
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 12px;
+        color: #000000;
+        width: 133px;
+        margin-top: 28px;
+        /* margin-left: 32px; */
+    }
+
+    .modal-list li {
+        /* - Заторный аппарат */
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 11px;
+        /* color: rgba(255, 255, 255, 0.7); */
+        color: #000000;
+        /* margin-left: 32px; */
+    }
+
+
+    .modal-cnt-title {
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 14px;
+        color: #000000;
+        padding-top: 37px;
+    }
+
+    .cnt-title-mini {
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 12px;
+        color: #000000;
+        margin-top: 25px;
+    }
+
+    .cnt-list li {
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 11px;
+        color: rgba(0, 0, 0, 0.7);
+        margin-top: 8px;
+    }
+
+    .modal-btn-wrp {
+        margin-top: 50px;
+        margin: auto;
+    }
+
+
+    .product-modal-wrp {
+        margin: auto;
+        margin-top: 60px;
+        width: 90%;
+    }
+
+
+    .slider-2 {
+        position: absolute !important;
+        left: calc(50% - 200px) !important;
+        top: 550px !important;
+        max-width: 400px;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+
+    .modal-product {
+        max-width: 85% !important;
+    }
+
+    .modal {
+        /* margin-top: calc(50% - 650px); */
+        margin-top: 35%;
+        margin-left: 20px;
+    }
+
+    .modal-length {
+        margin-top: 1%;
+    }
+
+    .modal-content {
+        margin: auto;
+    }
+
+    .modal-wrp {
+        display: flex;
+    }
+
+    .modal-asd {
+        width: 30%;
+        margin-right: auto;
+        background: #ffffff;
+        /* background: #055987; */
+        padding-bottom: 25px;
+        padding-left: 12px;
+    }
+
+    .modal-asd:hover {
+        background: #055987;
+        transition-duration: 0, 4s;
+    }
+
+    .modal-cnt {
+        width: 70%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .modal-title-mini {
+        /* Производство пива и кваса */
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 9px;
+        color: #000000;
+        max-width: 213px;
+        margin-top: 37px;
+    }
+
+    .modal-title-micro {
+        /* Варочный порядок (комплекс) */
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8px;
+        line-height: 8px;
+        color: #000000;
+        width: 20%;
+        margin-top: 28px;
+        /* margin-left: 32px; */
+    }
+
+    .modal-list li {
+        /* - Заторный аппарат */
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 6px;
+        line-height: 6px;
+        /* color: rgba(255, 255, 255, 0.7); */
+        color: #000000;
+        /* margin-left: 32px; */
+    }
+
+
+    .modal-cnt-title {
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 9px;
+        line-height: 9px;
+        color: #000000;
+        padding-top: 37px;
+        margin-left: -7px;
+    }
+
+    .cnt-title-mini {
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 8px;
+        line-height: 8px;
+        color: #000000;
+        margin-top: 25px;
+    }
+
+    .cnt-list li {
+        font-family: Oswald, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 6px;
+        line-height: 6px;
+        color: rgba(0, 0, 0, 0.7);
+        margin-top: 8px;
+    }
+
+    .modal-btn-cost {
+        font-size: 14px;
+        line-height: 18px;
+        color: #FFFFFF;
+        width: 35%;
+        height: 40px;
+
+    }
+
+
+    .modal-btn-send {
+        width: 35%;
+        height: 40px;
+        font-size: 14px;
+        line-height: 18px;
+
+    }
+
+    .modal-btn-wrp {
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        width: 320px;
+    }
+
+    .product-modal-wrp {
+        margin: auto;
+        margin-top: 360px;
+    }
+
+    .slider-2 {
+        position: absolute !important;
+        left: calc(50% - 150px) !important;
+        top: 0 !important;
+        max-width: 300px;
+    }
+
+    .productModalImg {
+        display: block;
+        margin-top: 10px;
+        margin-left: calc(50% - 75px);
+        width: 150px !important;
+    }
+
+
+    .imgCap {
+        width: 60% !important;
+        position: absolute !important;
+        margin: auto;
+        top: 150px !important;
+    }
+}
+
+@media (width: 425px) {
+    .imgCap {
+        margin-left: -20px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+
+    .product-modal-wrp {
+        margin: auto;
+        margin-top: 550px;
+    }
+
+    .productModalImg {
+        display: block;
+        margin-top: 10px;
+        /* margin-left: calc(50% - 100px); */
+        margin: auto;
+        width: 200px !important;
+    }
+
+    .slider-2 {
+        position: absolute !important;
+        left: calc(50% - 200px) !important;
+        top: 0 !important;
+        max-width: 400px;
+    }
+
+    .imgCap {
+        position: absolute !important;
+        left: calc(50% - 200px) !important;
+        top: 250px !important;
+        width: 400px !important;
+    }
+}

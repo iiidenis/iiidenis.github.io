@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка</title>
+    <link rel="icon" sizes="16x16" href="img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Oswald:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/b6298ce492.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+</head>
+
+<body class="body-form">
+    <header class="header">
+        <!-- Навигация по сайту -->
+        <nav class="nav">
+            <div class="container-fluid nav-wrp">
+                <div class="logo animate__animated animate__slideInLeft">
+                    <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                </div>
+                <div class="nav-right animate__animated animate__slideInRight">
+                    <a class="instHref" href="https://www.instagram.com/prominzhiniring_krd" target="_blanc"><img class="instImg" src="img/inst.svg" alt=""></a>
+                    <svg class="nav-svg" width="30" height="13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4.4086 10.4909L2.28728 8.36963C2.08955 8.1735 1.93497 7.93823 1.83342 7.6789C1.73188 7.41957 1.68562 7.14189 1.6976 6.86364C1.70958 6.58539 1.77954 6.31272 1.903 6.06308C2.02647 5.81343 2.20071 5.59233 2.41456 5.41392C4.82688 3.47446 7.66049 2.12789 10.6877 1.48241C13.4819 0.859562 16.3789 0.859562 19.173 1.48241C22.2127 2.13208 25.0567 3.48865 27.4744 5.44221C27.6876 5.62007 27.8615 5.84039 27.9849 6.08912C28.1083 6.33785 28.1785 6.60955 28.1912 6.88693C28.2038 7.1643 28.1585 7.44126 28.0583 7.70019C27.958 7.95911 27.8049 8.19432 27.6088 8.39084L25.4875 10.5122C25.1477 10.8587 24.6935 11.0699 24.2095 11.1063C23.7255 11.1427 23.2449 11.0019 22.857 10.7102C22.0886 10.1208 21.256 9.6203 20.3751 9.21816C20.0268 9.0602 19.7312 8.80573 19.5232 8.4849C19.3151 8.16408 19.2034 7.79033 19.2013 7.40796V5.61191C16.4244 4.84824 13.4929 4.84824 10.716 5.61191V7.40796C10.7139 7.79033 10.6022 8.16407 10.3941 8.4849C10.1861 8.80573 9.89043 9.0602 9.5422 9.21816C8.66127 9.6203 7.82866 10.1208 7.06025 10.7102C6.66831 11.0052 6.1816 11.1459 5.69269 11.1055C5.20378 11.065 4.74678 10.8463 4.4086 10.4909Z"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <a href="tel:+78002504543" class="nav-number-left">
+                        <p>8 (800) 250-45-43</p>
+                    </a>
+                    <a href="tel:+79280442775" class="nav-number-right">
+                        <p>8 (928) 044-27-75</p>
+                    </a>
+                    <button class="nav-button"><a class="nav-button__href" href="form.html" target="_blanc">Получить
+                            консультацию</a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="formWrapper">
+                <form class="form" action="mail.php" method="POST" id="data">
+                    <input type="hidden" name="project_name" value="prom-ing">
+                    <input type="hidden" name="admin_email" value="info@prom-ing.com">
+                    <input type="hidden" name="form_subject" value="Form Subject">
+                    <h1 class="formTitle">Заявка на расчет стоимости</h1>
+                    <p class="formTxt">* - обязательно для заполнения</p>
+                    <div class="displayFlex">
+                        <div class="organizationWrp">
+                            <label class="labelBlock" for="organization">Организация</label>
+                            <input class="inputTxt" type="text" id="organization" name="Организация"
+                                placeholder="Наименование вашей компании" autofocus>
+                        </div>
+                        <div class="nameWrp">
+                            <label class="labelBlock" for="name">ФИО<em>*</em></label>
+                            <input class="inputTxt inputTxt_name" type="text" id="name" name="ФИО"
+                                placeholder="Контактное лицо" required>
+                        </div>
+                    </div>
+                    <div class="displayFlex">
+                        <div class="typeWrp">
+                            <label class="labelBlock labelBlock_type" for="type"><span class="formInfoImg">Тип
+                                    оборудования</span> </label>
+                            <select class="inputTxt" id="type" name="Тип оборудования">
+                                <option label="Производство пива и кваса" value="beer" name="Производство пива и кваса">
+                                <option label="Производство молочной продукции" value="milk" name="Производство молочной продукции">
+                                <option label="Технологическое оборудование" value="techno" name="Технологическое оборудование">
+                                <option label="Моющее оборудование" value="wash" name="Моющее оборудование">
+                            </select>
+                        </div>
+                        <div class="phoneWrp">
+                            <label class="labelBlock" for="phone">Телефон*</label>
+                            <input class="inputTxt inputTxt_phone" type="text" id="phone" name="Телефон"
+                                placeholder="Телефон для связи" required>
+                        </div>
+                        <div class="emailWrp">
+                            <label class="labelBlock" for="email">E-mail</label>
+                            <input class="inputTxt inputTxt_phone" type="text" id="email" name="Электронная почта"
+                                placeholder="Электронная почта"
+                                pattern="^([A-Za-z0-9\.-]+)(@)([A-Za-z0-9\.-]+)(\.)([A-Za-z0-9\.-]{2,})$">
+                        </div>
+                    </div>
+                    <div class="rangeWrapper">
+                        <div class="countWrp">
+                            <label class="labelBlock labelBlock_count" for="count"><span
+                                    class="formInfoImg_count">Количество</span> </label>
+                            <input class='count' type="range" id="count" name="Количество" min="1" max="10" value="1"
+                                step="1" onchange="document.getElementById('rangeValue').innerHTML = this.value;"
+                                list="rangeList">
+                            <span id="rangeValue">1</span><span>-10</span>
+                            <!-- <datalist id="rangeList">
+                                <option value="0" label="0">
+                                <option value="2" label="2">
+                                <option value="4" label="4">
+                                <option value="6" label="6">
+                                <option value="8" label="8">
+                                <option value="10" label="10">
+                            </datalist> -->
+                        </div>
+                        <div class="volumeWrp">
+                            <label class="labelBlock labelBlock_volume" for="volume"><span
+                                    class="formInfoImg_volume">Рабочий объем</span> </label>
+                            <input type="range" id="volume" name="Рабочий объем" min="0" max="50" value="0" step="1"
+                                onchange="document.getElementById('rangeValueVolume').innerHTML = this.value;"
+                                list="rangeListVolume">
+                            <span id="rangeValueVolume">0</span><span>-50</span>
+                            <!-- <datalist id="rangeListVolume">
+                                <option value="5" label="5">
+                                <option value="10" label="10">
+                                <option value="15" label="15">
+                                <option value="20" label="20">
+                                <option value="25" label="25">
+                                <option value="30" label="30">
+                                <option value="35" label="35">
+                                <option value="40" label="40">
+                                <option value="45" label="45">
+                                <option value="50" label="50">
+                            </datalist> -->
+                        </div>
+                        <div class="pressureWrp">
+                            <label class="labelBlock labelBlock_pressure" for="pressure"><span
+                                    class="formInfoImg_pressure">Рабочее давление емкости</span> </label>
+                            <input type="range" id="pressure" name="Рабочее давление емкости" min="0" max="10" value="0" step="1"
+                                onchange="document.getElementById('rangeValuePressure').innerHTML = this.value;"
+                                list="rangeList">
+                            <span id="rangeValuePressure">1</span><span>-10</span>
+                            <!-- <datalist id="rangeList">
+                                <option value="0" label="0">
+                                <option value="2" label="2">
+                                <option value="4" label="4">
+                                <option value="6" label="6">
+                                <option value="8" label="8">
+                                <option value="10" label="10">
+                            </datalist> -->
+                        </div>
+                    </div>
+                    <div class="formProductWrp">
+                        <label class="labelBlock formInfoImg_formProduct" for="formProduct">Продукт</label>
+                        <input class="inputTxt inputTxt_formProduct" type="text" id="formProduct" name="Что содержится в емкости?"
+                            placeholder="Что содержится в емкости?">
+                    </div>
+                    <div class="checkboxWrp">
+                        <div class="heatExchange">
+                            <label class="labelBlock formInfoImg_heatExchange" name="Теплообменная рубашка">Теплообменная рубашка</label>
+                            <input type="checkbox" name="Нагрев" id="heat">
+                            <label class="labelTxt" for="heat">Нагрев</label><br>
+                            <input type="checkbox" name="Охлаждение" id="cool">
+                            <label class="labelTxt" for="cool">Охлаждение</label><br>
+                            <input type="checkbox" name="Нет" id="none__HeatExchange">
+                            <label class="labelTxt" for="none__HeatExchange">Нет</label>
+                        </div>
+                        <div class="thermalInsulation">
+                            <label class="labelBlock formInfoImg_thermalInsulation">Термоизоляция</label>
+                            <input type="checkbox" name="Термоизоляция" id="thermalInsulation__yes">
+                            <label class="labelTxt" for="thermalInsulation__yes">Да</label><br>
+                            <input type="checkbox" name="Термоизоляция" id="thermalInsulation__no">
+                            <label class="labelTxt" for="thermalInsulation__no">Нет</label>
+                        </div>
+                        <div class="placement">
+                            <label class="labelBlock formInfoImg_placement">Размещение</label>
+                            <input type="checkbox" name="Помещение" id="room">
+                            <label class="labelTxt" for="room">Помещение</label><br>
+                            <input type="checkbox" name="Улица" id="street">
+                            <label class="labelTxt" for="street">Улица</label>
+                        </div>
+                        <div class="material">
+                            <label class="labelBlock formInfoImg_material">Материал</label>
+                            <input type="checkbox" name="AISI304" id="AISI304">
+                            <label class="labelTxt" for="AISI304">AISI304</label><br>
+                            <input type="checkbox" name="AISI316" id="AISI316">
+                            <label class="labelTxt" for="AISI316">AISI316</label><br>
+                            <input class="inputTxt inputTxt_formProduct" type="text" id="other" name="other"
+                                placeholder="Другой">
+                        </div>
+                        <div class="mixer">
+                            <label class="labelBlock formInfoImg_mixer">Мешалка</label>
+                            <input type="checkbox" name="Мешалка да" id="mixer__yes">
+                            <label class="labelTxt" for="mixer__yes">Да</label><br>
+                            <input type="checkbox" name="Мешалка нет" id="mixer__no">
+                            <label class="labelTxt" for="mixer__no">Нет</label>
+                        </div>
+                        <div class="automat">
+                            <label class="labelBlock formInfoImg_automat">Автоматика</label>
+                            <input type="checkbox" name="Автоматика общая" id="general">
+                            <label class="labelTxt" for="general">Общая</label><br>
+                            <input type="checkbox" name="Автоматика индивидуальная" id="individual">
+                            <label class="labelTxt" for="individual">Индивидуальная</label><br>
+                            <input type="checkbox" name="Автоматика нет" id="automat__no">
+                            <label class="labelTxt" for="automat__no">Нет</label>
+                        </div>
+                        <div class="equipment">
+                            <label class="labelBlock formInfoImg_equipment">Оборудование</label>
+                            <input type="checkbox" name="Оборудование Уровнемер" id="level">
+                            <label class="labelTxt" for="level">Уровнемер</label><br>
+                            <input type="checkbox" name="Оборудование Пробоотборник" id="test">
+                            <label class="labelTxt" for="test">Пробоотборник</label><br>
+                            <input type="checkbox" name="Оборудование Люк" id="hatch">
+                            <label class="labelTxt" for="hatch">Люк</label><br>
+                            <input type="checkbox" name="Оборудование Диоптр" id="diopter">
+                            <label class="labelTxt" for="diopter">Диоптр</label><br>
+                            <input type="checkbox" name="Оборудование Подсветка диоптра" id="diopterLight">
+                            <label class="labelTxt" for="diopterLight">Подсветка диоптра</label>
+                        </div>
+                        <div class="invisibleWrp">
+                            <label class="labelBlock invisible">Invisible</label>
+                            <input type="checkbox" name="Оборудование Моющая головка" id="washerHead">
+                            <label class="labelTxt" for="washerHead">Моющая головка</label><br>
+                            <input type="checkbox" name="Оборудование Клапан предохранительный" id="ventil">
+                            <label class="labelTxt" for="ventil">Клапан предохранительный</label><br>
+                            <input type="checkbox" name="Оборудование Запорная арматура" id="fittings">
+                            <label class="labelTxt" for="fittings">Запорная арматура<br>с пневмоприводом</label>
+                        </div>
+                        <div class="measuring">
+                            <label class="labelBlock formInfoImg_measuring"
+                                title="Укажите какие контрольно-измерительные приборы Вы хотели бы использовать">КИПиА
+                            </label>
+                            <input type="checkbox" name="КИПиА Датчик температуры" id="tempSensor">
+                            <label class="labelTxt" for="tempSensor">Датчик температуры</label><br>
+                            <input type="checkbox" name="КИПиА Датчик давления" id="presSensor">
+                            <label class="labelTxt" for="presSensor">Датчик давления</label><br>
+                            <input type="checkbox" name="КИПиА Датчик предельного уровня" id="limitLevelSensor">
+                            <label class="labelTxt" for="limitLevelSensor">Датчик предельного уровня</label><br>
+                            <input type="checkbox" name="КИПиА Датчик нижнего уровня" id="lowLevelSensor">
+                            <label class="labelTxt" for="lowLevelSensor">Датчик нижнего уровня</label><br>
+                            <input type="checkbox" name="КИПиА Датчик открытия люка" id="openHatchSensor">
+                            <label class="labelTxt" for="openHatchSensor">Датчик открытия люка</label>
+                        </div>
+                        <div class="formCommentsWrp">
+                            <label class="labelBlock labelBlock_comments">Ваши комментарии</label><br>
+                            <textarea class="inputTxt inputTxt_formProduct resize__no" name="suggestions"
+                                id="suggestions" cols="97" rows="5"
+                                placeholder="Укажите свои пожелания к оборудованию"></textarea>
+                        </div>
+                        <button class="formButton" type="submit" form="data">Получить консультацию</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid space-beetwen">
+ 
+            <div class="footer-nav footerListForm animate__animated animate__bounceInUp">
+                <ul class="footer-list">
+                    <list class="footer-style footer-style-1"><a href="index.html"
+                            class="footer-style-link">Главная</a>
+                    </list>
+                    <list class="footer-style footer-style-2"><a href="about.html" class="footer-style-link">О
+                            компании</a>
+                    </list>
+                    <list class="footer-style footer-style-3"><a href="products.html"
+                            class="footer-style-link">Продукция</a>
+                    </list>
+                    <list class="footer-style footer-style-4"><a href="automation.html"
+                            class="footer-style-link">Автоматизация</a>
+                    </list>
+                    <list class="footer-style footer-style-5"><a href="contacts.html"
+                            class="footer-style-link">Контакты</a>
+                    </list>
+                </ul>
+            </div>
+       
+        </div>
+    </footer>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("body").css("display", "none");
+
+            $("body").fadeIn(1500);
+
+            $("footer a").click(function (event) {
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(1500, redirectPage);
+            });
+
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
