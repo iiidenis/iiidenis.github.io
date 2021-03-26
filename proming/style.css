@@ -251,6 +251,11 @@ body {
     width: 25px;
 }
 
+.instHrefMobile,
+.instImgMobile {
+    display: none;
+}
+
 .index-main {
     justify-content: space-between;
 }
@@ -1446,7 +1451,6 @@ body {
     left: 120px !important;
     top: 30px !important;
     max-width: 400px;
-
 }
 
 
@@ -2105,6 +2109,19 @@ body {
     background: #0B84C7;
 }
 
+.slider-3 {
+    position: absolute !important;
+    left: 120px !important;
+    top: 120px !important;
+    max-width: 500px;
+}
+
+.productModalImgCip {
+    display: block;
+    margin-top: 40px;
+    margin-left: 80px;
+    width: 350px !important;
+}
 
 /* Медиазапросы для адаптива под гаджеты */
 
@@ -2150,7 +2167,7 @@ body {
     .phoneButton {
         display: block !important;
         position: absolute;
-        right: 15px;
+        right: 65px;
         top: 15px;
         width: 32px;
         height: 32px;
@@ -2374,6 +2391,19 @@ body {
         height: 40px;
         font-size: 14px;
         line-height: 18px;
+    }
+
+
+    .instWrp {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .instHrefMobile,
+    .instImgMobile {
+        display: block;
+        width: 30px;
+        margin-top: 4.5px;
     }
 
 }
@@ -3505,6 +3535,20 @@ body {
         max-width: 400px;
     }
 
+    .slider-3 {
+        position: absolute !important;
+        left: calc(50% - 250px) !important;
+        top: 650px !important;
+        max-width: 500px;
+    }
+    
+    .productModalImgCip {
+        display: block;
+        margin-top: 40px;
+        margin-left: calc(50% - 175px) !important;
+        width: 350px !important;
+    }
+
 }
 
 @media (max-width: 575.98px) {
@@ -3673,6 +3717,20 @@ body {
         margin: auto;
         top: 150px !important;
     }
+
+    .slider-3 {
+        position: absolute !important;
+        left: calc(50% - 150px) !important;
+        top: 70px !important;
+        max-width: 300px;
+    }
+    
+    .productModalImgCip {
+        display: block;
+        margin-top: 10px;
+        margin-left: calc(50% - 100px);
+        width: 200px !important;
+    }
 }
 
 @media (width: 425px) {
@@ -3708,5 +3766,19 @@ body {
         left: calc(50% - 200px) !important;
         top: 250px !important;
         width: 400px !important;
+    }
+
+    .productModalImgCip {
+        display: block;
+        margin-top: 10px;
+        margin: auto;
+        width: 300px !important;
+    }
+
+    .slider-3 {
+        position: absolute !important;
+        left: calc(50% - 300px) !important;
+        top: 150px !important;
+        max-width: 600px;
     }
 }
