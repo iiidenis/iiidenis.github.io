@@ -36,16 +36,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.bd {
-    border: 1px solid #fff;
-}
-
-.container-2 {
-    margin: auto;
-    margin-right: 32px;
-    margin-left: 32px;
-}
-
 .headerWrp {
     @extend %tplFlex;
 }
@@ -129,111 +119,24 @@ body {
 
 main {
 
-    .cardsWrp {
-        // display: flex;
-        // flex-direction: column;
-        // flex-wrap: wrap;
-        // justify-content: space-between;
-        // align-items: flex-start;
-        margin-top: 16px;
+    .card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
 
+        padding: 14px;
+        width: 32.3%;
+        height: 216px;
+        background: rgba(38, 50, 56, 0.72);
+        box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.24);
+        border-radius: 8px;
 
-        .card {
-            // display: flex;
-            // flex-direction: row;
-            // flex-wrap: nowrap;
-            // justify-content: space-between;
-            // align-items: flex-start;
-            margin-bottom: 16px;
-
-            .circle {
-                position: relative;
-            }
-
-            .circle:before {
-                background-color: #FF3300;
-                width: 12px;
-                height: 12px;
-                border-radius: 50%;
-                content: " ";
-                position: absolute;
-                left: 14px;
-                top: 6px
-            }
-
-            .Brdr {
-                border-bottom: 8px solid #FF3300;
-            }
-
-
-            padding: 14px;
-            // width: 32.3%;
-            height: 216px;
-            background: rgba(38, 50, 56, 0.72);
-            box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.24);
-            border-radius: 8px;
-
-
-
-            h4 {
-                font-style: normal;
-                font-weight: normal;
-                font-size: 20px;
-                line-height: 27px;
-                color: #FFC733;
-                font-size: $fsh4;
-            }
-
-            p {
-                font-style: normal;
-                font-weight: bold;
-                line-height: 20px;
-                color: #0099FF;
-                font-size: $fstxt;
-                text-align: right;
-            }
-
-            h5 {
-                font-style: normal;
-                font-weight: bold;
-                line-height: 24px;
-                text-align: right;
-                color: #FFFFFF;
-                font-size: $fstxt;
-            }
-
-            span {
-                font-style: normal;
-                font-weight: bold;
-                font-size: 76px;
-                line-height: 106px;
-                color: #9FF855;
-            }
-
-            @media (max-width: 1800px) {
-                h4 {
-                    font-size: 16px;
-                }
-
-                p {
-                    font-size: 18px;
-                }
-
-                h5 {
-                    font-size: 18px;
-                }
-
-                span {
-                    font-size: 54px;
-                }
-
-                .circle:before {
-                    position: absolute;
-                    left: -16px;
-                    top: 5px
-                }
-            }
+        &:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)) {
+            margin-top: 16px;
         }
+
     }
 
     .cardLast {
@@ -262,10 +165,19 @@ main {
             font-size: 80px;
             line-height: 106px;
             color: #9FF855;
+
         }
 
+        .Brdr {
+            border-bottom: 8px solid #FF3300;
+            width: 100%;
+        }
 
-
+        @media (max-width: 999px) {
+            h4 {
+                font-size: $fsh4m;
+            }
+        }
     }
 
 
@@ -284,8 +196,27 @@ main {
             font-size: $fstxt;
         }
 
+        .circle {
+            position: relative;
+        }
+
+        .circle:before {
+            background-color: #FF3300;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            content: " ";
+            position: absolute;
+            left: -15px;
+            top: 8px
+        }
     }
 
+    @media (max-width: 999px) {
+        .txtCnt {
+            font-size: $fstxtm;
+        }
+    }
 
     .cardRight {
         display: flex;
@@ -303,11 +234,22 @@ main {
             font-size: $fstxt;
         }
 
-
+        @media (max-width: 999px) {
+            .txtRight {
+                font-size: $fstxtm;
+            }
+        }
     }
 
 
-
+    .cardsWrp {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 16px;
+        margin-right: 20px;
+    }
 
     .asideTop {
         margin-top: 16px;
@@ -471,7 +413,6 @@ main {
 
     footer {
         background: rgba(38, 50, 56, 0.72);
-        margin-top: auto;
 
         .footerTop {
             margin-top: 70px;
@@ -484,7 +425,7 @@ main {
                 font-style: normal;
                 font-weight: bold;
                 font-size: 20px;
-                line-height: 40px;
+                line-height: 27px;
                 text-align: center;
                 letter-spacing: 4px;
                 text-transform: uppercase;
