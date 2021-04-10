@@ -31,11 +31,10 @@ $fstxtm: calc(16px + (8 + 8 * 0.7) * ((100vw - 999px) / 1920));
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    background: url(img/backgrounddark3.png);
+    background: url(img/background.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 
 .bd {
     border: 1px solid #fff;
@@ -43,9 +42,8 @@ body {
 
 .container-2 {
     margin: auto;
-    padding-right: 32px;
-    padding-left: 32px;
-    max-width: 1920px;
+    margin-right: 32px;
+    margin-left: 32px;
 }
 
 .headerWrp {
@@ -152,14 +150,6 @@ main {
                 position: relative;
             }
 
-            .fl {
-                min-height: 185px;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: space-between;
-            }
-
             .circle:before {
                 background-color: #FF3300;
                 width: 12px;
@@ -167,13 +157,13 @@ main {
                 border-radius: 50%;
                 content: " ";
                 position: absolute;
-                left: 52px;
+                left: 14px;
                 top: 6px
             }
 
-            // .Brdr {
-            //     border-bottom: 8px solid #FF3300;
-            // }
+            .Brdr {
+                border-bottom: 8px solid #FF3300;
+            }
 
 
             padding: 14px;
@@ -220,20 +210,6 @@ main {
                 color: #9FF855;
             }
 
-            .Brdr {
-                position: relative;
-            }
-
-            .Brdr:before {
-                border-bottom: 8px solid #FF3300;
-                width: 100%;
-                height: 8px;
-                content: " ";
-                position: absolute;
-                left: 2px;
-                bottom: 5px;
-            }
-
             @media (max-width: 1800px) {
                 h4 {
                     font-size: 16px;
@@ -244,7 +220,7 @@ main {
                 }
 
                 h5 {
-                    font-size: 14px;
+                    font-size: 18px;
                 }
 
                 span {
@@ -253,18 +229,8 @@ main {
 
                 .circle:before {
                     position: absolute;
-                    left: 8px;
+                    left: -16px;
                     top: 5px
-                }
-
-                .Brdr:before {
-                    border-bottom: 8px solid #FF3300;
-                    width: 100%;
-                    height: 8px;
-                    content: " ";
-                    position: absolute;
-                    left: 2px;
-                    bottom: 15px;
                 }
             }
         }
