@@ -34,6 +34,7 @@ body {
     background: url(img/backgrounddark3.png);
     background-size: cover;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 
 
@@ -41,12 +42,12 @@ body {
     border: 1px solid #fff;
 }
 
-.container-2 {
-    margin: auto;
-    padding-right: 32px;
-    padding-left: 32px;
-    max-width: 1920px;
-}
+
+
+// .container-fluid {
+//     padding-right: 32px;
+//     padding-left: 32px;
+// }
 
 .headerWrp {
     @extend %tplFlex;
@@ -403,17 +404,13 @@ main {
 
     .asideBtm {
         background: rgba(38, 50, 56, 0.72);
-        margin-top: 16px;
-        min-height: 297px;
         position: relative;
-
+        margin-bottom: 16px;
 
         .progressbar {
             padding-left: 16px;
 
-            img {
-                margin-top: 20px;
-            }
+
 
             .count {
                 font-style: normal;
@@ -434,18 +431,17 @@ main {
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 color: #C0C0C0;
-                margin-top: -15px;
+                margin-top: -19px;
             }
 
             .countLoad {
                 position: absolute;
-                top: 60px;
+                top: 50px;
                 left: 60px;
             }
         }
 
         .progressValue {
-            padding-top: 20px;
             padding-right: 16px;
 
             .number {
@@ -505,7 +501,7 @@ main {
 
     footer {
         background: rgba(38, 50, 56, 0.72);
-        margin-top: auto;
+margin-bottom: 16px;
 
         .footerTop {
             margin-top: 70px;
