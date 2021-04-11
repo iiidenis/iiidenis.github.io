@@ -1,15 +1,9 @@
 @import url("http://fonts.cdnfonts.com/css/segoe-ui-4");
-.headerWrp, .headerRight, main footer .footerTop, main footer .footerContent .fTop, main footer .footerContent .fBtm {
+.headerWrp, .headerRight {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center; }
-
-main footer .footerContent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start; }
 
 .flex {
   display: flex;
@@ -85,14 +79,15 @@ body {
     line-height: 53px; }
 
 main .cardsWrp {
-  margin-top: 16px; }
+  margin-top: 6px; }
   main .cardsWrp .card {
-    margin-bottom: 16px;
     padding: 14px;
     height: 216px;
     background: rgba(38, 50, 56, 0.72);
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.24);
-    border-radius: 8px; }
+    border-radius: 8px;
+    margin-bottom: 16px;
+    margin-right: -10px; }
     main .cardsWrp .card .circle {
       position: relative; }
     main .cardsWrp .card .fl {
@@ -108,7 +103,7 @@ main .cardsWrp {
       border-radius: 50%;
       content: " ";
       position: absolute;
-      left: 52px;
+      left: 23px;
       top: 6px; }
     main .cardsWrp .card h4 {
       font-style: normal;
@@ -138,15 +133,10 @@ main .cardsWrp {
       line-height: 106px;
       color: #9FF855; }
     main .cardsWrp .card .Brdr {
-      position: relative; }
-    main .cardsWrp .card .Brdr:before {
+      display: block;
       border-bottom: 8px solid #FF3300;
       width: 100%;
-      height: 8px;
-      content: " ";
-      position: absolute;
-      left: 2px;
-      bottom: 5px; }
+      padding-bottom: -20px; }
     @media (max-width: 1800px) {
       main .cardsWrp .card h4 {
         font-size: 16px; }
@@ -155,21 +145,17 @@ main .cardsWrp {
       main .cardsWrp .card h5 {
         font-size: 14px; }
       main .cardsWrp .card span {
-        font-size: 54px; }
+        font-size: 54px; } }
+    @media (max-width: 1600px) {
       main .cardsWrp .card .circle:before {
         position: absolute;
-        left: 8px;
-        top: 5px; }
-      main .cardsWrp .card .Brdr:before {
-        border-bottom: 8px solid #FF3300;
-        width: 100%;
-        height: 8px;
-        content: " ";
+        left: 6px;
+        top: 5px; } }
+    @media (max-width: 1380px) {
+      main .cardsWrp .card .circle:before {
         position: absolute;
-        left: 2px;
-        bottom: 15px; } }
-main .cardLast {
-  opacity: 0; }
+        left: -8px;
+        top: 4px; } }
 main .cardLeft {
   display: flex;
   flex-direction: column;
@@ -213,12 +199,14 @@ main .cardRight {
     color: #FFFFFF;
     font-size: calc(16px + 8 * (100vw / 1920)); }
 main .asideTop {
-  margin-top: 16px;
-  max-width: 439px;
-  background: rgba(38, 50, 56, 0.72); }
+  margin-top: 6px;
+  background: rgba(38, 50, 56, 0.72);
+  border-radius: 8px; }
   main .asideTop .asideTitle {
     background: rgba(38, 50, 56, 0.72);
-    height: 42px; }
+    height: 42px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px; }
     main .asideTop .asideTitle h2 {
       font-style: normal;
       font-weight: bold;
@@ -254,59 +242,68 @@ main .asideTop {
     padding-right: 16px; }
 main .asideBtm {
   background: rgba(38, 50, 56, 0.72);
-  position: relative;
-  margin-bottom: 16px; }
-  main .asideBtm .progressbar {
-    padding-left: 16px; }
-    main .asideBtm .progressbar .count {
-      font-style: normal;
-      font-weight: 300;
-      font-size: 60px;
-      line-height: 80px;
-      text-align: center;
-      color: #FFFFFF; }
-    main .asideBtm .progressbar .load {
-      display: block;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 18px;
-      text-align: center;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: #C0C0C0;
-      margin-top: -19px; }
-    main .asideBtm .progressbar .countLoad {
-      position: absolute;
-      top: 50px;
-      left: 60px; }
-  main .asideBtm .progressValue {
-    padding-right: 16px; }
-    main .asideBtm .progressValue .number {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 36px;
-      line-height: 48px;
-      text-align: center;
-      color: #C0C0C0;
-      display: block; }
-    main .asideBtm .progressValue .percent {
-      font-style: normal;
-      font-weight: normal;
-      font-size: 36px;
-      line-height: 48px;
-      text-align: center;
-      color: #FF3300;
-      display: block;
-      margin-top: 90px; }
+  margin-top: 16px;
+  border-radius: 8px;
+  padding-top: 8px; }
+  main .asideBtm .img {
+    margin-left: 30px;
+    position: relative;
+    margin-bottom: 11px;
+    z-index: 1; }
+  main .asideBtm .img2 {
+    position: absolute;
+    top: 1px;
+    left: 45px;
+    z-index: 0; }
+  main .asideBtm .count {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center;
+    color: #FFFFFF; }
+  main .asideBtm .load {
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #C0C0C0; }
+  main .asideBtm .countLoad {
+    position: absolute;
+    top: 28px;
+    left: 88px; }
+  main .asideBtm .numberPercent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  main .asideBtm .number {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #C0C0C0;
+    display: block; }
+  main .asideBtm .percent {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+    color: #FF3300;
+    display: block; }
   main .asideBtm .stat {
     background: #263238;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 7px; }
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    height: 72px; }
+    main .asideBtm .stat .statWrp {
+      display: flex;
+      align-items: center; }
     main .asideBtm .stat .today {
       font-style: normal;
       font-weight: bold;
@@ -315,7 +312,9 @@ main .asideBtm {
       text-align: center;
       letter-spacing: 4px;
       text-transform: uppercase;
-      color: #0099FF; }
+      color: #0099FF;
+      text-align: start;
+      padding-left: 16px; }
     main .asideBtm .stat .statNumber {
       font-style: normal;
       font-weight: bold;
@@ -323,73 +322,79 @@ main .asideBtm {
       line-height: 64px;
       text-align: center;
       letter-spacing: 2px;
-      color: #0099FF; }
+      color: #0099FF;
+      text-align: end;
+      padding-right: 16px; }
 main footer {
   background: rgba(38, 50, 56, 0.72);
-  margin-bottom: 16px; }
+  border-radius: 8px;
+  margin-bottom: 15px; }
   main footer .footerTop {
-    margin-top: 70px;
     height: 40px;
-    background: rgba(0, 0, 0, 0.72);
-    justify-content: space-around; }
+    background: rgba(0, 0, 0, 0.72); }
     main footer .footerTop .palleta {
       font-style: normal;
       font-weight: bold;
       font-size: 20px;
+      font-size: calc(14px + 6 * (100vw / 1920));
       line-height: 40px;
       text-align: center;
       letter-spacing: 4px;
       text-transform: uppercase;
-      color: #FFFFFF;
-      border-radius: 1px; }
-  main footer .footerContent {
-    padding-top: 12px; }
-    main footer .footerContent .f018 {
-      padding: 0px 16px;
-      max-width: 171px;
-      min-height: 120px;
-      background: #9FF855;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 16px;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 80px;
-      line-height: 106px;
-      text-align: center;
-      color: #000000; }
-    main footer .footerContent .fTop {
-      justify-content: space-between;
-      width: 85%; }
-      main footer .footerContent .fTop .f211965 {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 60px;
-        line-height: 72px;
-        text-align: center;
-        letter-spacing: 4px;
-        color: #FFFFFF; }
-      main footer .footerContent .fTop .af122 {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 32px;
-        color: #FFFFFF; }
-    main footer .footerContent .fBtm {
-      width: 80%; }
-      main footer .footerContent .fBtm .f24 {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 36px;
-        line-height: 48px;
-        text-align: center;
-        letter-spacing: 4px;
-        color: #FFC733; }
-      main footer .footerContent .fBtm .f00 {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 30px;
-        line-height: 40px;
-        text-align: right;
-        color: #00DC00; }
+      color: #FFFFFF; }
+  main footer .footerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  main footer .footerPadding {
+    padding-left: 6px;
+    padding-right: 16px; }
+  main footer .palletaPd {
+    padding-left: 16px; }
+  main footer .fNumber {
+    padding: 0px 16px;
+    max-width: 171px;
+    min-height: 120px;
+    background: #9FF855;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    font-size: calc(14px + 66 * (100vw / 1920));
+    line-height: 106px;
+    text-align: center;
+    color: #000000; }
+  main footer .f211965 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    font-size: calc(12px + 48 * (100vw / 1920));
+    line-height: 72px;
+    letter-spacing: 4px;
+    color: #FFFFFF; }
+  main footer .af122 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    font-size: calc(10px + 14 * (100vw / 1920));
+    line-height: 32px;
+    color: #FFFFFF; }
+  main footer .f24 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    font-size: calc(12px + 24 * (100vw / 1920));
+    line-height: 48px;
+    letter-spacing: 4px;
+    color: #FFC733; }
+  main footer .f00 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    font-size: calc(11px + 19 * (100vw / 1920));
+    line-height: 40px;
+    text-align: right;
+    color: #00DC00; }
 
 /*# sourceMappingURL=style.css.map */

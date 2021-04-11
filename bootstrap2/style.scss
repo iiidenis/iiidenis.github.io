@@ -285,7 +285,8 @@ main {
         .asideTitle {
             background: rgba(38, 50, 56, 0.72);
             height: 42px;
-            border-radius: 8px;
+         border-top-left-radius: 8px;
+         border-top-right-radius: 8px;
 
             h2 {
                 font-style: normal;
