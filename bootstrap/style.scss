@@ -407,6 +407,7 @@ main {
         position: relative;
         margin-bottom: 16px;
 
+
         .progressbar {
             padding-left: 16px;
 
@@ -473,6 +474,7 @@ main {
             align-items: center;
             padding-left: 16px;
             padding-right: 16px;
+            padding-bottom: 7px;
 
             .today {
                 font-style: normal;
@@ -501,7 +503,7 @@ main {
 
     footer {
         background: rgba(38, 50, 56, 0.72);
-margin-bottom: 16px;
+        margin-bottom: 16px;
 
         .footerTop {
             margin-top: 70px;
