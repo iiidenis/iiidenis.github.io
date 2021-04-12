@@ -78,6 +78,13 @@ $fstxtm: calc(16px + (8 + 8 * 0.7) * ((100vw - 999px) / 1920));
     align-items: flex-start;
 }
 
+.flexCnt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .flexNoWrap {
     display: flex;
     flex-wrap: nowrap;
@@ -202,6 +209,7 @@ main {
         border-radius: 8px;
         padding: 8px;
         height: 312px;
+        margin-right: -10px;
 
         // &:not(:nth-child(1)):not(:nth-child(2)):not(:nth-child(3)):not(:nth-child(4)) {
         //     margin-top: 16px;
@@ -404,7 +412,7 @@ footer {
             text-align: center;
             color: #000000;
             margin-left: 28px;
-            margin-top: 12px;
+            margin-top: 25px;
         }
 
         @media (min-width: 1200px) and (max-width: 1700px) {
@@ -418,7 +426,7 @@ footer {
             font-weight: bold;
             font-size: 60px;
             font-size: calc(20px + 20 * (100vw / 1920));
-            line-height: 72px;
+            line-height: 81px;
             text-align: start;
             letter-spacing: 4px;
             color: #FFFFFF;
@@ -429,9 +437,10 @@ footer {
             font-weight: bold;
             font-size: 40px;
             font-size: calc(16px + 24 * (100vw / 1920));
-            line-height: 53px;
+            line-height: 72px;
             text-align: start;
             color: #FFC733;
+
         }
 
 
@@ -475,7 +484,7 @@ footer {
             font-weight: bold;
             font-size: 40px;
             font-size: calc(20px + 20 * (100vw / 1920));
-            line-height: 53px;
+            line-height: 85px;
             text-align: center;
             color: #0099FF;
         }
